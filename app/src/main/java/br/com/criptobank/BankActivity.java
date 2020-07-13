@@ -106,8 +106,6 @@ public class BankActivity extends AppCompatActivity implements View.OnClickListe
                             tv_conta.setText(tipoConta);
                             cliente.Conta.setSaldo(cliente.Conta.getSaldo());
 
-                            totalSacar = cliente.getSaque();
-                            totalDeposito = cliente.getDeposito();
                             cliente.Conta.Depositar(cliente.getDeposito(), getApplication());
                             cliente.Conta.Sacar(cliente.getSaque(), getApplication());
 
@@ -210,7 +208,7 @@ public class BankActivity extends AppCompatActivity implements View.OnClickListe
                                             tv_saldo.setText(sa);
 
                                             et_value.setText("");
-                                            hashMap.put("saque", val);
+                                            hashMap.put("saque", totalSacar);
                                             hashMap.put("saldo", cliente.Conta.getSaldo());
 
                                             mDatabaseReference.child(c).updateChildren(hashMap);
@@ -246,7 +244,7 @@ public class BankActivity extends AppCompatActivity implements View.OnClickListe
                                             tv_saldo.setText(sa);
 
                                             et_value.setText("");
-                                            hashMap.put("deposito", val);
+                                            hashMap.put("deposito", totalDeposito);
                                             hashMap.put("saldo", cliente.Conta.getSaldo());
 
                                             mDatabaseReference.child(c).updateChildren(hashMap);
