@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "349287307947",
+    "firebase_url": "https://criptobank2k20.firebaseio.com",
+    "project_id": "criptobank2k20",
+    "storage_bucket": "criptobank2k20.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:349287307947:android:24675a3f1316e7372d75ee",
+        "android_client_info": {
+          "package_name": "br.com.criptobank"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "349287307947-k3a6qil8i79qmm1g7rnqe0d3g8ojqhjk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.criptobank",
+            "certificate_hash": "6520b931b698062fe0a8f024308d85eb2d19df9e"
+          }
+        },
+        {
+          "client_id": "349287307947-m6bsrh72mk3v3vs1vcf2h58k40p5au3m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA38TTK51QcIfc8JgYtV9QfUqkx5eutNy8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "349287307947-m6bsrh72mk3v3vs1vcf2h58k40p5au3m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

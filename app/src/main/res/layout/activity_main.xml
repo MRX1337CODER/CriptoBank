@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#03081A">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/app_bar"
+                layout="@layout/app_bar_toolbar" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/ic_wave" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-65dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginEnd="30dp"
+                    app:cardBackgroundColor="#E6434343"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/img_app"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="25dp"
+                            android:layout_marginBottom="10dp"
+                            app:srcCompat="@drawable/ic_criptobank"
+                            tools:ignore="ContentDescription" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/ti_code"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/img_app"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginTop="25dp"
+                            android:layout_marginEnd="25dp"
+                            android:hint="@string/code"
+                            android:textColorHint="#B3FFFFFF"
+                            app:boxStrokeColor="#FF191919"
+                            app:boxStrokeWidth="2dp"
+                            app:boxStrokeWidthFocused="2dp"
+                            app:endIconMode="clear_text"
+                            app:endIconTint="@android:color/holo_red_light"
+                            app:errorEnabled="true"
+                            app:errorIconTint="@android:color/holo_red_light"
+                            app:startIconDrawable="@drawable/ic_code_24dp"
+                            app:startIconTint="@android:color/white">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/et_code"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:digits="0123456789"
+                                android:inputType="number"
+                                android:maxLength="20"
+                                android:padding="13dp"
+                                android:textColor="#EFEFEF" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/ti_name"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/ti_code"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="25dp"
+                            android:layout_marginRight="25dp"
+                            android:hint="@string/name"
+                            android:textColorHint="#B3FFFFFF"
+                            app:boxStrokeColor="#FF191919"
+                            app:boxStrokeWidth="2dp"
+                            app:boxStrokeWidthFocused="2dp"
+                            app:endIconMode="clear_text"
+                            app:endIconTint="@android:color/holo_red_light"
+                            app:errorEnabled="true"
+                            app:errorIconTint="@android:color/holo_red_light"
+                            app:startIconDrawable="@drawable/ic_person_outline_24dp"
+                            app:startIconTint="@android:color/white">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/et_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:inputType="textPersonName"
+                                android:padding="13dp"
+                                android:textColor="#EFEFEF" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <Spinner
+                            android:id="@+id/spinner_conta"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_below="@id/ti_name"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="25dp" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/submit"
+                            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/spinner_conta"
+                            android:layout_marginStart="95dp"
+                            android:layout_marginLeft="95dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginEnd="95dp"
+                            android:layout_marginRight="95dp"
+                            android:padding="15dp"
+                            android:text="@string/open_account"
+                            android:textAllCaps="false"
+                            android:textColor="#ffffff"
+                            android:textSize="14sp"
+                            android:textStyle="normal"
+                            app:backgroundTint="#CC000000"
+                            app:strokeColor="@android:color/transparent" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_below="@+id/submit" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

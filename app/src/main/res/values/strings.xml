@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CriptoBank</string>
+    <string name="close_account">Encerrar Conta</string>
+    <string name="deposit">Depositar</string>
+    <string name="withdraw">Sacar</string>
+    <string name="extract">Extrato</string>
+    <string name="value">Valor</string>
+    <string name="code">Código</string>
+    <string name="name">Nome</string>
+    <string name="open_account">Abrir Conta</string>
+    <string name="alunos">Alunos</string>
+</resources>

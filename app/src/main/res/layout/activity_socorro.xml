@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#303030"
+    tools:context=".Socorro">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        tools:ignore="ScrollViewCount,UselessParent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_code"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="25dp"
+            android:hint="@string/code"
+            android:textColorHint="#B3FFFFFF"
+            app:boxStrokeColor="#FF191919"
+            app:boxStrokeWidth="2dp"
+            app:boxStrokeWidthFocused="2dp"
+            app:endIconMode="clear_text"
+            app:endIconTint="@android:color/holo_red_light"
+            app:errorEnabled="true"
+            app:errorIconTint="@android:color/holo_red_light"
+            app:startIconDrawable="@drawable/ic_code_24dp"
+            app:startIconTint="@android:color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_code"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:digits="0123456789"
+                android:inputType="number"
+                android:maxLength="20"
+                android:padding="13dp"
+                android:textColor="#EFEFEF" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:hint="@string/name"
+            android:textColorHint="#B3FFFFFF"
+            app:boxStrokeColor="#FF191919"
+            app:boxStrokeWidth="2dp"
+            app:boxStrokeWidthFocused="2dp"
+            app:endIconMode="clear_text"
+            app:endIconTint="@android:color/holo_red_light"
+            app:errorEnabled="true"
+            app:errorIconTint="@android:color/holo_red_light"
+            app:startIconDrawable="@drawable/ic_person_outline_24dp"
+            app:startIconTint="@android:color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName"
+                android:padding="13dp"
+                android:textColor="#EFEFEF" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/spinner_conta"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="25dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/submit"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="95dp"
+            android:layout_marginLeft="95dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="95dp"
+            android:layout_marginRight="95dp"
+            android:padding="15dp"
+            android:text="@string/open_account"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:backgroundTint="#CC000000"
+            app:strokeColor="@android:color/transparent" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:id="@+id/code"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_conta"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/valor"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_value"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:hint="@string/value"
+            android:textColorHint="#B3FFFFFF"
+            app:boxStrokeColor="#FF191919"
+            app:boxStrokeWidth="2dp"
+            app:boxStrokeWidthFocused="2dp"
+            app:endIconMode="clear_text"
+            app:endIconTint="@android:color/holo_red_light"
+            app:errorEnabled="true"
+            app:errorIconTint="@android:color/holo_red_light"
+            app:startIconDrawable="@drawable/ic_money_24dp"
+            app:startIconTint="@android:color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_value"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:padding="13dp"
+                android:textColor="#EFEFEF" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_deposit"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="95dp"
+            android:layout_marginLeft="95dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="95dp"
+            android:layout_marginRight="95dp"
+            android:layout_marginBottom="40dp"
+            android:padding="15dp"
+            android:text="@string/deposit"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:backgroundTint="#CC000000"
+            app:strokeColor="@android:color/transparent" />
+
+    </LinearLayout>
+
+</ScrollView>
